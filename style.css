@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+   --Dark-Grey: hsl(0, 0%, 12%);
+   --Off-Black: hsl(0, 0%, 8%);
+}
+body{
+  width: 100%;
+  background: url(assets/images/favicon-32x32.png);
+  height: 100vh;
+  margin: 30px 50px 30px 80px;
+  overflow: hidden;    
+   
+}
+.container{
+    max-width: 1200px;
+    height: 90%;
+    background: var(--Off-Black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+ 
+}
+.cardBox{
+    width: 350px;
+    height: 480px;
+    background: var(--Dark-Grey);
+    border-radius: 10px;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.details img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.details h3{
+    color: var(--White);
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.details .city{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--Green);
+   
+}
+.details p{
+    font-size: 12px;
+    color: var(--White);
+    font-weight: 400;
+}
+.listBox{
+    padding: 15px 25px;
+    /* background: firebrick; */
+}
+.listBox li{
+    background: var(--Grey);
+    margin: 12px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+}
+.listBox li a{
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--White);
+}
+@media (max-width:1275px){
+    body{
+        margin: 0;
+    }
+  
+    
+}
+
